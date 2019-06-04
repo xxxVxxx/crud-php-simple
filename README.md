@@ -2,8 +2,10 @@ Simple Create, Read, Update, Delete (CRUD) in PHP & MySQL
 ========
 
 A simple and basic system to add, edit, delete and view using PHP and MySQL. 
+This application is forked from [here](https://github.com/chapagain/crud-php-simple)
 
-Blog Article: [Very simple add, edit, delete, view in PHP & MySQL](http://blog.chapagain.com.np/very-simple-add-edit-delete-view-in-php-mysql/)
+Its been modified to fit to be used with terraform deployment code [here](https://github.com/xxxVxxx/CW-Terraform-Website)
 
-SQL script to create database and tables is present in **database.sql** file.
+The config.php and database.sql files are templatized inside terraform and cloud-init scripts as they need to be worked upon certain conditions depending upon if the machine is going to create the database and tables or if its an instance that is scaled in the cluster and the database already exists.
+
 
