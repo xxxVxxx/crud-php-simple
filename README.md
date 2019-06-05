@@ -6,6 +6,7 @@ This application is forked from [here](https://github.com/chapagain/crud-php-sim
 
 Its been modified to fit to be used with terraform deployment code [here](https://github.com/xxxVxxx/CW-Terraform-Website)
 
-The config.php and database.sql files are templatized inside terraform and cloud-init scripts as they need to be worked upon certain conditions depending upon if the machine is going to create the database and tables or if its an instance that is scaled in the cluster and the database already exists.
+config.php file is recreated from userdata file for each instance.
 
+database.sql file has been modified to add a few entries during creation.
 
